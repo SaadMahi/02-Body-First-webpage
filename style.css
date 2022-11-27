@@ -1,0 +1,294 @@
+html {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+/*
+body{
+    margin: 0;
+}*/ /*used to erase margins around the body*/
+
+body {
+  text-align: center;
+}
+
+/*p,h1,h2,h3*/
+
+h2,
+h3 {
+  font-family: monospace;
+
+  font-size: xx-large;
+}
+
+#products {
+  color: green;
+  text-decoration: underline;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+.fintprint {
+  font-family: fantasy;
+  font-size: 90%;
+}
+
+/* images  */
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: space-around;
+}
+
+nav a {
+  display: inline-block;
+  padding: 5px;
+  color: #7aa247;
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus {
+  color: green;
+}
+
+.logo img {
+  width: 100px;
+}
+
+header {
+  padding: 10px;
+}
+
+.hero {
+  background: #999;
+  background-image: url(https://bodyfirst-media.farziengineer.co/hosted/1440x312_Px_copy_1-bc84d0622561.jpg);
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  background-position: center;
+  color: white;
+  padding: 15vh 0;
+}
+
+.hero h2 {
+  font-family: cursive;
+}
+
+.text {
+  color: #7aa247;
+}
+
+.text-online {
+  color: #7aa247;
+  font-size: 30px;
+}
+
+.online {
+  position: relative;
+  top: -40px;
+}
+
+.intro {
+  text-align: center;
+}
+
+.section-title {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.about-us {
+  background: #7aa247;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-us-intro {
+  background-image: url(https://bodyfirststage-media.farziengineer.co/hosted/Web_All_Banner_W_655_x_H_500_Px_B-27b0755a8d0d.jpg?auto=format&sharp=20&ixlib=react-9.3.0&w=1446);
+
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-size: cover;
+  padding: 3em 1em;
+}
+
+.about-us-body {
+  padding: 50px 20px;
+}
+
+.section-title-small {
+  color: blue;
+}
+
+/*buttons*/
+
+.btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.btn {
+  padding: 2px;
+  color: white;
+  text-decoration: none;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+/**/
+
+.btn-accent {
+  background: #76a835;
+  font-size: 25px;
+  text-decoration: underline;
+  padding: 10px;
+}
+
+.mb {
+  margin-bottom: 0;
+}
+
+.btn-primary {
+  background: #7aa247;
+  font-size: 25px;
+
+  padding: 25px;
+}
+
+#products {
+  text-decoration: none;
+}
+
+.products {
+  display: flex;
+  flex-direction: column;
+  max-width: 30rem;
+  margin: 0 auto;
+}
+
+.product {
+  background: #f0f0f0;
+  padding: 10px;
+  border-radius: 20px;
+
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.2);
+}
+
+.product:last-of-type {
+  margin-bottom: 30px;
+}
+
+/* Hover */
+
+.btn:hover,
+.btn:focus {
+  background: #8bc441;
+}
+
+/* footer */
+
+footer {
+  background: #76a835;
+  padding: 3em 1em;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-nav {
+  list-style: none;
+}
+
+footer a {
+  color: inherit;
+}
+
+.footer-nav a {
+  padding: 0.75em;
+  text-decoration: none;
+  line-height: 25px;
+}
+
+.footer-nav a:hover {
+  text-decoration: underline;
+}
+
+.footer-nav,
+.footer-social {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.soc-link {
+}
+
+.social-img {
+  max-width: 50px;
+}
+
+@media only screen and (min-width: 750px) {
+  p {
+    font-size: 130%;
+  }
+
+  section {
+    padding: 80px 20px;
+  }
+
+  .about-us {
+    flex-direction: row;
+  }
+
+  .about-us-intro,
+  .about-us-body {
+    flex: 0 1 50%;
+  }
+
+  .about-us-intro {
+    background-size: cover;
+  }
+
+  .about-us-body {
+    text-align: left;
+  }
+
+  .order-online {
+    max-width: 70ch;
+    margin: 0 auto;
+  }
+
+  .btn {
+    margin: 10px auto;
+  }
+
+  .btn-group {
+    flex-direction: row;
+  }
+
+  /*products*/
+
+  .products {
+    flex-direction: row;
+    max-width: fit-content;
+  }
+
+  .product {
+    margin: 0;
+    flex: 0 1 33%;
+  }
+
+  .product + .product {
+    margin-left: 1em;
+  }
+}
