@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Alkatra&family=Graduate&display=swap");
+
 html {
   box-sizing: border-box;
   font-family: Arial, sans-serif;
@@ -30,7 +32,8 @@ p {
 }
 
 .fintprint {
-  font-family: fantasy;
+  font-family: "Alkatra", cursive;
+
   font-size: 90%;
 }
 
@@ -71,7 +74,7 @@ header {
 
 .hero {
   background: #999;
-  background-image: url(https://bodyfirst-media.farziengineer.co/hosted/1440x312_Px_copy_1-bc84d0622561.jpg);
+  background-image: url(./images/hero.jpg);
   background-repeat: no-repeat;
   background-blend-mode: multiply;
   background-position: center;
@@ -230,11 +233,32 @@ footer a {
   padding: 0;
 }
 
-.soc-link {
-}
-
 .social-img {
   max-width: 50px;
+}
+
+@media only screen and (max-width: 1287px) {
+  .hero {
+    background: url(./images/hero-2.PNG) no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+@media only screen and (max-width: 1102px) {
+  .hero {
+    background: url(./images/hero-2.PNG) no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .hero {
+    background: url(./images/hero-2.PNG) no-repeat;
+    background-position-x: left;
+    background-size: cover;
+  }
 }
 
 @media only screen and (min-width: 750px) {
